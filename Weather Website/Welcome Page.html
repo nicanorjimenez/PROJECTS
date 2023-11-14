@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="WelcomepageCSS.css">
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="vidclassmeyt.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <h1>Welcome</h1>
+        <button class="btn" id="loginButton">Log In</button>
+        <button class="btn" id="signupButton">Sign Up</button>
+    </div>
+
+    <div class="login-form" id="loginFormContainer">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <br><br>
+            <input type="password" id="password" placeholder="Password">
+            <br><br>
+            <button type="button" onclick="authenticate()" class="transparent-btn">Login</button>
+        </form>
+    </div>
+
+    <!-- Add this div at an appropriate place in your HTML -->
+    <div id="registrationMessage" class="registration-message"></div>
+    <div id="popupMessage" class="popup-message">
+        <span id="popupContent"></span>
+    </div>
+
+    <div class="signup-form" id="signupFormContainer">
+        <form id="signupForm">
+            <h2>Sign Up</h2>
+            <input type="text" id="signupUsername" placeholder="Username">
+            <br><br>
+            <input type="text" id="address" placeholder="Address">
+            <br><br>
+            <input type="date" id="birthdate">
+            <br><br>
+            <input type="text" id="contactInfo" placeholder="Contact Info">
+            <br><br>
+            <input type="email" id="email" placeholder="Email">
+            <br><br>
+            <input type="text" id="position" placeholder="Position">
+            <br><br>
+            <button type="button" onclick="submitSignUp()" class="transparent-btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="welcomepage.js"></script>
+</body>
+</html>
